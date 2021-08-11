@@ -1,5 +1,5 @@
 # baseURI: https://unifiedcyberontology.org/ontology/uco/pattern
-# imports: https://unifiedcyberontology.org/ontology/uco/core
+# imports:https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-core/core.ttl
 
 @base <https://unifiedcyberontology.org/ontology/uco/pattern> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,7 +11,7 @@
 <https://unifiedcyberontology.org/ontology/uco/pattern>
 	a owl:Ontology ;
 	rdfs:label "uco-pattern"@en ;
-	owl:imports <https://unifiedcyberontology.org/ontology/uco/core> ;
+	owl:imports <https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-core/core.ttl> ;
 	.
 
 pattern:LogicalPattern
