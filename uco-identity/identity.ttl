@@ -1,8 +1,8 @@
-# baseURI: https://unifiedcyberontology.org/ontology/uco/identity
+# baseURI: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-identity/identity.ttl
 # imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-core/core.ttl
 # imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-location/location.ttl
 
-@base <https://unifiedcyberontology.org/ontology/uco/identity> .
+@base <https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-identity/identity.ttl> .
 @prefix identity: <https://unifiedcyberontology.org/ontology/uco/identity#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

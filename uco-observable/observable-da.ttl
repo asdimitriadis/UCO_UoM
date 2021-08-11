@@ -1,6 +1,6 @@
-# baseURI: https://unifiedcyberontology.org/ontology/uco/observable-da
+# baseURI: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-observable/observable-da.ttl
 
-@base <https://unifiedcyberontology.org/ontology/uco/observable-da> .
+@base <https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-observable/observable-da.ttl> .
 @prefix observable: <https://unifiedcyberontology.org/ontology/uco/observable#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
