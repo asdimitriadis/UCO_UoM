@@ -35,27 +35,27 @@
 	a owl:Ontology ;
 	rdfs:label "uco-master"@en ;
 	owl:imports
-		<https://unifiedcyberontology.org/ontology/uco/action> ,
-		<https://unifiedcyberontology.org/ontology/uco/action-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/core> ,
-		<https://unifiedcyberontology.org/ontology/uco/core-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/identity> ,
-		<https://unifiedcyberontology.org/ontology/uco/identity-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/location> ,
-		<https://unifiedcyberontology.org/ontology/uco/location-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/marking> ,
-		<https://unifiedcyberontology.org/ontology/uco/marking-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/observable> ,
-		<https://unifiedcyberontology.org/ontology/uco/observable-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/pattern> ,
-		<https://unifiedcyberontology.org/ontology/uco/pattern-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/role> ,
-		<https://unifiedcyberontology.org/ontology/uco/time> ,
-		<https://unifiedcyberontology.org/ontology/uco/tool> ,
-		<https://unifiedcyberontology.org/ontology/uco/tool-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/types> ,
-		<https://unifiedcyberontology.org/ontology/uco/types-da> ,
-		<https://unifiedcyberontology.org/ontology/uco/victim>
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-action/action.ttl ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-action/action-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-core/core.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-core/core-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-identity/identity.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-identity/identity-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-location/location.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-location/location-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-marking/marking.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-marking/marking-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-observable/observable.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-observable/observable-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-pattern/pattern.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-pattern/pattern-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-role/role.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-time/time.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-tool/tool.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-tool/tool-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types-da.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-victim/victim.ttl>
 		;
 	owl:versionInfo "0.6.0" ;
 	.
