@@ -20,12 +20,35 @@
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#detection
+:detection rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :data-source ;
+           rdfs:range xsd:string .
+
+
+#################################################################
 #    Classes
 #################################################################
 
 ###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Archive_via_Utility
 :Archive_via_Utility rdf:type owl:Class ;
-                     rdfs:subClassOf :attack-pattern ;
+                     rdfs:subClassOf :attack-pattern ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has-data-source ;
+                                       owl:someValuesFrom :Command:_Command_Execution
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has-data-source ;
+                                       owl:someValuesFrom :File:_File_Creation
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :has-data-source ;
+                                       owl:someValuesFrom :Process:_Process_Creation
+                                     ] ;
                      rdfs:label "Archive via Utility" .
 
 
@@ -37,10 +60,118 @@
 :data-source rdf:type owl:Class .
 
 
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Active_Directory:_Active_Directory_Object_Access
+:Active_Directory:_Active_Directory_Object_Access rdf:type owl:Class ;
+                                                  rdfs:subClassOf :data-source ;
+                                                  rdfs:label "Active Directory: Active Directory Object Access" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Application_Log:_Application_Log_Content
+:Application_Log:_Application_Log_Content rdf:type owl:Class ;
+                                          rdfs:subClassOf :data-source ;
+                                          rdfs:label "Application Log: Application Log Content" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Command:_Command_Execution
+:Command:_Command_Execution rdf:type owl:Class ;
+                            rdfs:subClassOf :data-source ;
+                            rdfs:label "Command: Command Execution" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Drive:_Drive_Access
+:Drive:_Drive_Access rdf:type owl:Class ;
+                     rdfs:subClassOf :data-source ;
+                     rdfs:label "Drive: Drive Access" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Drive:_Drive_Modification
+:Drive:_Drive_Modification rdf:type owl:Class ;
+                           rdfs:subClassOf :data-source ;
+                           rdfs:label "Drive: Drive Modification" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Driver:_Driver_Load
+:Driver:_Driver_Load rdf:type owl:Class ;
+                     rdfs:subClassOf :data-source ;
+                     rdfs:label "Driver: Driver Load" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#File:_File_Access
+:File:_File_Access rdf:type owl:Class ;
+                   rdfs:subClassOf :data-source ;
+                   rdfs:label "File: File Access" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#File:_File_Creation
+:File:_File_Creation rdf:type owl:Class ;
+                     rdfs:subClassOf :data-source ;
+                     rdfs:label "File: File Creation" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#File:_File_Modification
+:File:_File_Modification rdf:type owl:Class ;
+                         rdfs:subClassOf :data-source ;
+                         rdfs:label "File: File Modification" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Logon_Session:_Logon_Session_Creation
+:Logon_Session:_Logon_Session_Creation rdf:type owl:Class ;
+                                       rdfs:subClassOf :data-source ;
+                                       rdfs:label "Logon Session: Logon Session Creation" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Module:_Module_Load
+:Module:_Module_Load rdf:type owl:Class ;
+                     rdfs:subClassOf :data-source ;
+                     rdfs:label "Module: Module Load" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Network_Traffic:_Network_Connection_Creation
+:Network_Traffic:_Network_Connection_Creation rdf:type owl:Class ;
+                                              rdfs:subClassOf :data-source ;
+                                              rdfs:label "Network Traffic: Network Connection Creation" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Network_Traffic:_Network_Traffic_Content
+:Network_Traffic:_Network_Traffic_Content rdf:type owl:Class ;
+                                          rdfs:subClassOf :data-source ;
+                                          rdfs:label "Network Traffic: Network Traffic Content" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Network_Traffic:_Network_Traffic_Flow
+:Network_Traffic:_Network_Traffic_Flow rdf:type owl:Class ;
+                                       rdfs:subClassOf :data-source ;
+                                       rdfs:label "Network Traffic: Network Traffic Flow" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Process:_OS_API_Execution
+:Process:_OS_API_Execution rdf:type owl:Class ;
+                           rdfs:subClassOf :data-source ;
+                           rdfs:label "Process: OS API Execution" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Process:_Process_Access
+:Process:_Process_Access rdf:type owl:Class ;
+                         rdfs:subClassOf :data-source ;
+                         rdfs:label "Process: Process Access" .
+
+
 ###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Process:_Process_Creation
 :Process:_Process_Creation rdf:type owl:Class ;
                            rdfs:subClassOf :data-source ;
                            rdfs:label "Process: Process Creation" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Sensor_Health:_Host_Status
+:Sensor_Health:_Host_Status rdf:type owl:Class ;
+                            rdfs:subClassOf :data-source ;
+                            rdfs:label "Sensor Health: Host Status" .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Windows_Registry:_Windows_Registry_Key_Access
+:Windows_Registry:_Windows_Registry_Key_Access rdf:type owl:Class ;
+                                               rdfs:subClassOf :data-source ;
+                                               rdfs:label "Windows Registry: Windows Registry Key Access" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
