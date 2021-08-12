@@ -52,12 +52,37 @@
                      rdfs:label "Archive via Utility" .
 
 
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Second_Test
+:Second_Test rdf:type owl:Class ;
+             rdfs:subClassOf :attack-pattern .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Test_A_Class
+:Test_A_Class rdf:type owl:Class ;
+              rdfs:subClassOf :test .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#ThirdTest
+:ThirdTest rdf:type owl:Class ;
+           rdfs:subClassOf :attack-pattern ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :has-data-source ;
+                             owl:someValuesFrom :Drive:_Drive_Access
+                           ] .
+
+
 ###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#attack-pattern
 :attack-pattern rdf:type owl:Class .
 
 
 ###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#data-source
 :data-source rdf:type owl:Class .
+
+
+###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#test
+:test rdf:type owl:Class ;
+      rdfs:subClassOf :attack-pattern ;
+      rdfs:label "test" .
 
 
 ###  https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack#Active_Directory:_Active_Directory_Object_Access
