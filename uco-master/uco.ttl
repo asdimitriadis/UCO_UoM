@@ -20,6 +20,7 @@
 # imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types.ttl
 # imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types-da.ttl
 # imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-victim/victim.ttl
+# imports: https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack.ttl
 
 @base <https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-master/uco.ttl> .
 @prefix : <https://unifiedcyberontology.org/ontology/uco/uco#> .
@@ -55,7 +56,8 @@
 		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-tool/tool-da.ttl> ,
 		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types.ttl> ,
 		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-types/types-da.ttl> ,
-		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-victim/victim.ttl>
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/uco-victim/victim.ttl> ,
+		<https://raw.githubusercontent.com/asdimitriadis/UCO_UoM/master/mitre/attack.ttl>
 		;
 	owl:versionInfo "0.6.0" ;
 	.
